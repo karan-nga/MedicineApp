@@ -35,4 +35,36 @@
         </item>
 
     </style>
+
+    <style name="shop_by_cat">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="covid_care">
+
+        <item name="android:textSize">
+            8sp
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="telam_40_5m">
+
+        <item name="android:textSize">8sp</item>
+
+        <item name="android:textColor">#000000</item>
+
+    </style>
 </resources>

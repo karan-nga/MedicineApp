@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">MedicineApp</string>
     <string name="lab_tests_b">Lab Tests By Health Concern</string>
+    <string name="shop_by_cat">Shop by Categories</string>
+    <string name="covid_care">Covid Care</string>
+    <string name="recently_se">Recently searched</string>
+    <string name="telam_40_5m">Telam 40/5mg Strip Of 15 Tablets</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

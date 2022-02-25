@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="@drawable/img1"
+        app:fillColor="#FFFFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_card3_title_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="82dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@id/carouselView"
+        app:layout_constraintLeft_toLeftOf="@id/carouselView"
+        app:layout_constraintTop_toTopOf="@id/carouselView"
+        tools:text="FLAT 25% OFF" />
+
+    <TextView
+        android:id="@+id/tv_card3_title_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="70dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@id/carouselView"
+        app:layout_constraintLeft_toLeftOf="@id/carouselView"
+        app:layout_constraintTop_toTopOf="@id/carouselView"
+        tools:text="on medicines" />
+
+    <TextView
+        android:id="@+id/tv_card3_title_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="63dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="6dp"
+        app:layout_constraintBottom_toBottomOf="@id/carouselView"
+        app:layout_constraintLeft_toLeftOf="@id/carouselView"
+        app:layout_constraintTop_toTopOf="@id/carouselView"
+        tools:text="Limited Offer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

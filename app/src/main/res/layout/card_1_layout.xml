@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rectangle_2">
+
+
+    <ImageView
+        android:id="@+id/iv_card1_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/document"/>
+
+
+    <TextView
+        android:id="@+id/tv_card1_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Upload your prescription"
+        app:layout_constraintTop_toTopOf="@id/iv_card1_ic"
+        app:layout_constraintLeft_toRightOf="@id/iv_card1_ic"
+        android:layout_marginStart="15dp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_card1_title_sub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Upload your prescription"
+        android:lines="2"
+        app:layout_constraintTop_toBottomOf="@id/tv_card1_title_text"
+        app:layout_constraintLeft_toLeftOf="@id/tv_card1_title_text" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_card1_title_sub_text"
+        android:layout_margin="8dp"
+        android:src="@drawable/green_small_circle"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

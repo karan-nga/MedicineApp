@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MedicineApp</string>
+    <string name="lab_tests_b">Lab Tests By Health Concern</string>
+
+</resources>

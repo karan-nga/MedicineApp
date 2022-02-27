@@ -13,7 +13,7 @@ import com.synnapps.carouselview.ImageListener
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     private var layoutManager:RecyclerView.LayoutManager?=null
-    private var adapter:RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
+    private var adapter:RecyclerView.Adapter<RecyclerView.ViewHolder>? = null
     private val user=user()
     private val cart=com.rawtooth.medicineapp.fragments.cart()
 

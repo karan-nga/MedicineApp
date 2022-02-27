@@ -36,6 +36,11 @@
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/single_screen.xml" value="0.536" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/two_card_widget.xml" value="0.4" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/menu/nav_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/unsplash_ef.xml" value="0.2075" />
+        <entry key="app/src/main/res/layout/card_1_layout.xml" value="0.4323028564453125" />
+        <entry key="app/src/main/res/layout/crousel_3.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/n_medium_layout.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/two_card_widget.xml" value="0.3115942028985507" />
       </map>
     </option>
   </component>
@@ -48,7 +53,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.536" />
+        <option name="scale" value="0.3115942028985507" />
       </ProjectState>
     </option>
   </component>

@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingStart="22dp"
-    android:paddingEnd="22dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp" >
+<layout>
+    <data>
+        <variable
+            name="card1"
+            type="com.rawtooth.medicineapp.models.Card1DetailClass" />
+        
+        <variable
+            name="card2"
+            type="com.rawtooth.medicineapp.models.Card1DetailClass" />
+    </data>
 
-    <include
-        layout="@layout/card_1_layout"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"/>
-
-    <include
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_marginStart="8dp"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/card_1_layout" />
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" >
 
-</LinearLayout>
+        <include
+            layout="@layout/card_1_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:card="@{card1}"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:card="@{card2}"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            layout="@layout/card_1_layout" />
+
+    </LinearLayout>
+    
+</layout>
+

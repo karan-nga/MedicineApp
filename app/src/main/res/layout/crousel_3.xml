@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.synnapps.carouselview.CarouselView
+    <ImageView
         android:id="@+id/carouselView"
         android:layout_width="match_parent"
         android:layout_height="152dp"

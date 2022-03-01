@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".fragments.users.user_reminder"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.users.user_address"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.users.user_coupons"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.users.user_order"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

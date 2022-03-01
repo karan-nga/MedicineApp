@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="banner"
+            type="com.rawtooth.medicineapp.models.Banner" />
+    </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
     android:layout_height="wrap_content">
 
     <ImageView
@@ -28,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="@id/carouselView"
         app:layout_constraintLeft_toLeftOf="@id/carouselView"
         app:layout_constraintTop_toTopOf="@id/carouselView"
-        tools:text="FLAT 25% OFF" />
+        android:text="@{banner.text}" />
 
     <TextView
         android:id="@+id/tv_card3_title_text2"
@@ -44,7 +51,7 @@
         app:layout_constraintBottom_toBottomOf="@id/carouselView"
         app:layout_constraintLeft_toLeftOf="@id/carouselView"
         app:layout_constraintTop_toTopOf="@id/carouselView"
-        tools:text="on medicines" />
+        android:text="@{banner.des}" />
 
     <TextView
         android:id="@+id/tv_card3_title_text3"
@@ -56,11 +63,12 @@
         android:layout_marginBottom="63dp"
         android:singleLine="true"
         android:textColor="#000000"
-        android:textSize="6dp"
+        android:textSize="6sp"
         app:layout_constraintBottom_toBottomOf="@id/carouselView"
         app:layout_constraintLeft_toLeftOf="@id/carouselView"
         app:layout_constraintTop_toTopOf="@id/carouselView"
-        tools:text="Limited Offer" />
+        android:text="@{banner.time}" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

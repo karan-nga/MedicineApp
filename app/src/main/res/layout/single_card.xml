@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="single_card"
+            type="com.rawtooth.medicineapp.models.Single_card" />
+    </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -27,7 +33,7 @@
         app:layout_constraintLeft_toLeftOf="@id/single_card_view1"
         app:layout_constraintTop_toTopOf="@id/single_card_view1"
     android:fontFamily="@font/robotoregular"
-        tools:text="Call us to order" />
+        android:text="@{single_card.text}"  />
     <View
         android:id="@+id/single_card_view2"
         android:layout_width="27dp"
@@ -56,3 +62,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

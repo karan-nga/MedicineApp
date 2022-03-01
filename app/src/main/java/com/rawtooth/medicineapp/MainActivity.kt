@@ -1,44 +1,52 @@
 package com.rawtooth.medicineapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.rawtooth.medicineapp.databinding.ActivityMainBinding
+import com.rawtooth.medicineapp.fragments.cart
 import com.rawtooth.medicineapp.fragments.user
 
-import com.synnapps.carouselview.ImageListener
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    private var layoutManager:RecyclerView.LayoutManager?=null
-    private var adapter:RecyclerView.Adapter<RecyclerView.ViewHolder>? = null
-    private val user=user()
-    private val cart=com.rawtooth.medicineapp.fragments.cart()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        layoutManager=LinearLayoutManager(this)
-        binding.mainRecycler.layoutManager=layoutManager
-        adapter=RecyclerAdapter()
-        binding.mainRecycler.adapter=adapter
+        binding.mainRecycler.adapter = RecyclerAdapter()
+        binding.mainRecycler.layoutManager = LinearLayoutManager(this)
 
-        binding.bottomNav.setOnNavigationItemReselectedListener {
-            when(it.itemId){
-                R.id.person -> replaceFragment(user)
-                R.id.bag -> replaceFragment(cart)
-            }
-
-        }
     }
-    private fun replaceFragment(fragment: Fragment){
-        if(fragment!=null){
-            val tranction=supportFragmentManager.beginTransaction()
-            tranction.replace(R.id.fragment_container,fragment)
-            tranction.commit()
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.nav_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.home ->{
+                replaceFragment(user())
+            }
+            R.id.person -> {
+                replaceFragment(user())
+            }
+            R.id.bag -> {
+                replaceFragment(cart())
+            }
         }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val tranction = supportFragmentManager.beginTransaction()
+        tranction.replace(R.id.fragment_container, fragment)
+        tranction.commit()
     }
 }

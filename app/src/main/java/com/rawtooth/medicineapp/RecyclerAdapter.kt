@@ -1,5 +1,6 @@
 package com.rawtooth.medicineapp
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,7 +29,7 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             }
             VIEW_TYPE_TWO_CARD_CROUSEL ->{
                 val view=LayoutInflater.from(parent.context).inflate(R.layout.crousel_3,parent,false)
-                return SearchViewHolder(view)
+                return CrouselView(view)
             }
             VIEW_TYPE_TWO_CARD_WIDGET -> {
                 val view=LayoutInflater.from(parent.context).inflate(R.layout.two_card_widget,parent,false)
@@ -36,23 +37,23 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             }
             VIEW_TYPE_SINGLE_CARD -> {
                 val view=LayoutInflater.from(parent.context).inflate(R.layout.single_card,parent,false)
-                return SearchViewHolder(view)
+                return SingleCard(view)
             }
             VIEW_TYPE_N_LARGE -> {
-                val view=LayoutInflater.from(parent.context).inflate(R.layout.n_large_layout,parent,false)
-                return SearchViewHolder(view)
+                val view=LayoutInflater.from(parent.context).inflate(R.layout.n_large_widgets_recycler,parent,false)
+                return NLarge(view)
             }
             VIEW_TYPE_N_SMALL -> {
-                val view=LayoutInflater.from(parent.context).inflate(R.layout.n_small_layout,parent,false)
-                return SearchViewHolder(view)
+                val view=LayoutInflater.from(parent.context).inflate(R.layout.n_small_widgets_recycler,parent,false)
+                return NLarge(view)
             }
             VIEW_TYPE_N_MEDIUM -> {
-                val view=LayoutInflater.from(parent.context).inflate(R.layout.n_medium_layout,parent,false)
-                return SearchViewHolder(view)
+                val view=LayoutInflater.from(parent.context).inflate(R.layout.n_medium_widgets_recycler,parent,false)
+                return NLarge(view)
             }
             VIEW_TYPE_SINGLE_SCREEN -> {
                 val view=LayoutInflater.from(parent.context).inflate(R.layout.single_screen,parent,false)
-                return SearchViewHolder(view)
+                return NLarge(view)
             }
         }
 
@@ -64,13 +65,31 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return position
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-
+        if(holder is ViewHolder) {
+            holder.itemTitle.text="Upload your prescription"
+            holder.itemDes.text="Upload your prescription and \nwe will do the rest"
+        } else if(holder is SearchViewHolder) {
+                holder.itemTitle.text="Search for medicines, lab tests, doctors"
+        }
+        else if(holder is CrouselView){
+            holder.itemTitle.text="FLAT 25% OFF"
+            holder.itemDes.text="on medicines"
+            holder.timeLimited.text="Limited Offer"
+        }
+        else if(holder is SingleCard){
+            holder.itemTitle.text="Call us to order"
+        }
     }
 
     override fun getItemCount(): Int {
-    return  7
+    return  8
     }
+
+//    class WidgetViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+//        abstract bind()
+//    }
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val itemImg:ImageView
@@ -84,6 +103,33 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     inner class SearchViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val itemTitle:TextView
+        init {
+            itemTitle=itemView.findViewById(R.id.tv_card1_title_text)
+        }
+    }
+
+    inner class CrouselView(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val itemTitle:TextView
+        val itemDes:TextView
+        val timeLimited:TextView
+        init {
+            itemTitle=itemView.findViewById(R.id.tv_card3_title_text1)
+            itemDes=itemView.findViewById(R.id.tv_card3_title_text2)
+            timeLimited=itemView.findViewById(R.id.tv_card3_title_text3)
+
+        }
+    }
+    inner class SingleCard(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val itemTitle:TextView
+
+        init {
+            itemTitle=itemView.findViewById(R.id.single_card_tv1)
+        }
+    }
+    inner class NLarge(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     }
+
+
 }

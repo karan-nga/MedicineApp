@@ -13,6 +13,15 @@ class HomeFragment : Fragment() {
 
     lateinit var binding: HomeFragmentBinding
 
+
+
+
+
+
+
+
+
+
     companion object {
         fun newInstance() = HomeFragment()
     }

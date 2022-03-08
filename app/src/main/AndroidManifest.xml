@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name=".consult.doctor_consult"
+            android:exported="false" />
+        <activity
+            android:name=".consult.consult"
+            android:exported="false" />
+        <activity
             android:name=".fragments.users.user_reminder"
             android:exported="false" />
         <activity

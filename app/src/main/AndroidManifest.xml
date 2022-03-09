@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name=".cart.order"
+            android:exported="false" />
+        <activity
             android:name=".consult.doctor_consult"
             android:exported="false" />
         <activity

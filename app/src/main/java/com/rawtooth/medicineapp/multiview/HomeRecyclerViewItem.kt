@@ -12,11 +12,11 @@ sealed class HomeRecyclerViewItem {
         val description:String,
         val time:String
     ):HomeRecyclerViewItem()
-    class TwoCard1(
-        val type:String,
-        val title: String,
-        val description: String
-    ):HomeRecyclerViewItem()
+//    class TwoCard1(
+//        val type:String,
+//        val title: String,
+//        val description: String
+//    ):HomeRecyclerViewItem()
     class SingleCard(
         val type:String,
         val title: String

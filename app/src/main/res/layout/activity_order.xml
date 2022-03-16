@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#E5E5E5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:background="#E5E5E5"
         app:title="Bag"/>
 
@@ -121,6 +124,7 @@
         android:textSize="11sp"
         android:layout_marginTop="28dp"/>
     <TextView
+        android:id="@+id/bag_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Price Details"
@@ -130,16 +134,10 @@
         android:layout_marginStart="13dp"
         android:textSize="11sp"
         android:layout_marginTop="28dp"/>
-    <View
-        android:id="@+id/line_6"
-        android:layout_width=""
-        android:layout_height="0dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="34dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="413dp"
-        android:background="@drawable/user_singlr_line"
-        />
+
+
+<include layout="@layout/single_screen"
+    app:layout_constraintTop_toBottomOf="@id/bag_view2"/>
 
 
 

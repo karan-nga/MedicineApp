@@ -6,5 +6,156 @@
     android:layout_height="match_parent"
     tools:context="com.rawtooth.anchal.insurance.Insurance_activity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="         Insurance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E5E5E5"/>
+
+    <ImageView
+        android:id="@+id/rec59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rec59"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginBottom="391dp"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/rec59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="415dp"
+        android:background="@drawable/rectangle59"
+        android:elevation="4dp"
+        android:text="BUY NEW PLAN"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textAlignment="center" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/pikpng"
+        android:layout_marginLeft="268dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="44dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec59"
+        app:layout_constraintStart_toStartOf="@id/rec59"
+        android:text="Comprhensive Health Cover"
+        android:textColor="@color/black"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="500dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="148dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/robotoregular"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec59"
+        app:layout_constraintStart_toStartOf="@id/rec59"
+        android:text="Protect yourself and your family"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="185dp"
+        android:layout_marginBottom="98dp"
+        android:fontFamily="@font/robotoregular"
+        />
+    <ImageView
+        android:id="@+id/rec60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rec60"
+        app:layout_constraintTop_toBottomOf="@+id/rec59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="242dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image1"
+        app:layout_constraintTop_toTopOf="@id/rec60"
+        app:layout_constraintStart_toStartOf="@id/rec60"
+        android:layout_marginLeft="232dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="55dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/rec60"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="87dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="415dp"
+        android:background="@drawable/rectangle59"
+        android:elevation="4dp"
+        android:text="BUY HEALTH CARD"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/buyhealthcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec60"
+        app:layout_constraintStart_toStartOf="@id/rec60"
+        android:text="Buy Health Cards"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="205dp"
+        android:layout_marginBottom="109dp"
+        android:fontFamily="@font/robotoregular"/>
+    <TextView
+        android:id="@+id/protectfamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec60"
+        app:layout_constraintStart_toStartOf="@id/rec60"
+        android:text="Protect yourself and your family"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="185dp"
+        android:layout_marginBottom="98dp"
+        android:fontFamily="@font/robotoregular"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

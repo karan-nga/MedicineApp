@@ -6,4 +6,240 @@
     android:layout_height="match_parent"
     tools:context="com.rawtooth.anchal.insurance.Prescription_activity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="         Prescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E5E5E5"/>
+
+    <ImageView
+        android:id="@+id/rec42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/rec42"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="22dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:text="@string/upload_your_prescription"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotoregular"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@+id/rec42"
+        android:text="@string/order_according_to_what_prescripted"
+        android:textColor="@color/black"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="26dp"
+        android:textSize="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:text="Upload now"
+        android:textColor="#046854"
+        android:textStyle="bold"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="44dp"
+        android:textSize="8dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:src="@drawable/vec9"
+        android:layout_marginLeft="259dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="28.33dp"
+        android:layout_marginBottom="23.17dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:src="@drawable/vec10"
+        android:layout_marginLeft="276.92dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="48.25dp"
+        android:layout_marginRight="28.33dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:src="@drawable/vec13"
+        android:layout_marginLeft="266.17dp"
+        android:layout_marginTop="24.54dp"
+        android:layout_marginRight="46.25dp"
+        android:layout_marginBottom="46.46dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:src="@drawable/vec12"
+        android:layout_marginLeft="266.17dp"
+        android:layout_marginTop="31.71dp"
+        android:layout_marginRight="35.5dp"
+        android:layout_marginBottom="39.29dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec42"
+        app:layout_constraintStart_toStartOf="@id/rec42"
+        android:src="@drawable/vec11"
+        android:layout_marginLeft="266.17dp"
+        android:layout_marginTop="38.87dp"
+        android:layout_marginRight="35.5dp"
+        android:layout_marginBottom="32.12dp"/>
+
+
+    <ImageView
+        android:id="@+id/rectangle42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rec42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/rec42"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="22dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rectangle42"
+        app:layout_constraintStart_toStartOf="@id/rectangle42"
+        android:text="Don't have a prescription?"
+        android:textColor="@color/black"
+        android:fontFamily="@font/robotoregular"
+        android:textSize="8dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="205dp"
+        android:layout_marginBottom="54dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rectangle42"
+        app:layout_constraintStart_toStartOf="@id/rectangle42"
+        android:text="Consult the doctor"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="19dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rectangle42"
+        app:layout_constraintStart_toStartOf="@id/rectangle42"
+        android:text="Schedule now"
+        android:textColor="#046854"
+        android:textStyle="bold"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="44dp"
+        android:textSize="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle42"
+        app:layout_constraintStart_toStartOf="@id/rectangle42"
+        android:text="Your prescriptions"
+        android:textColor="#119A7E"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/robotoregular"/>
+
+
+    <ImageView
+        android:id="@+id/rec65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/rec65"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec65"
+        app:layout_constraintStart_toStartOf="@id/rec65"
+        android:src="@drawable/vec14"
+        android:layout_marginLeft="294.95dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginRight="14.43dp"
+        android:layout_marginBottom="9.53dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec65"
+        app:layout_constraintStart_toStartOf="@id/rec65"
+        android:src="@drawable/vec15"
+        android:layout_marginLeft="297.31dp"
+        android:layout_marginTop="101.26dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec65"
+        app:layout_constraintStart_toStartOf="@id/rec65"
+        android:src="@drawable/vec16"
+        android:layout_marginLeft="299.21dp"
+        android:layout_marginTop="101.26dp"/>
+    <ImageView
+        android:id="@+id/rec38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rec65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/rec65"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        />
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

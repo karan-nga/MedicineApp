@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.rawtooth.loginresgister.Login
 import com.rawtooth.medicineapp.R
 import com.rawtooth.medicineapp.databinding.FragmentUserBinding
 import com.rawtooth.medicineapp.fragments.users.user_address
@@ -30,6 +31,9 @@ lateinit var userBinding:FragmentUserBinding
         userBinding.userCoupons.setOnClickListener {
             startActivity(Intent(context, user_coupons::class.java))
         }
+        userBinding.userLogout.setOnClickListener{
+            startActivity(Intent(context,Login::class.java))
+                    }
             userBinding.userMedicineReminder.setOnClickListener {
                 startActivity(Intent(context, user_reminder::class.java))
             }

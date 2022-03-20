@@ -1,14 +1,16 @@
 package com.rawtooth.medicineapp
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class RecyclerAdapter(val context: Context):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val VIEW_TYPE_SEARCH : Int = 0;
     private  val VIEW_TYPE_TWO_CARD_CROUSEL : Int = 1
@@ -18,7 +20,6 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private  val VIEW_TYPE_N_SMALL : Int = 5
     private  val VIEW_TYPE_N_MEDIUM : Int = 6
     private  val VIEW_TYPE_SINGLE_SCREEN : Int = 7
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 
@@ -32,7 +33,7 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 return CrouselView(view)
             }
             VIEW_TYPE_TWO_CARD_WIDGET -> {
-                val view=LayoutInflater.from(parent.context).inflate(R.layout.two_card_widget,parent,false)
+                val view=LayoutInflater.from(parent.context).inflate(R.layout.card_1_layout,parent,false)
                 return ViewHolder(view)
             }
             VIEW_TYPE_SINGLE_CARD -> {
@@ -45,20 +46,20 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             }
             VIEW_TYPE_N_SMALL -> {
                 val view=LayoutInflater.from(parent.context).inflate(R.layout.n_small_widgets_recycler,parent,false)
-                return NLarge(view)
+                return NSmall(view)
             }
             VIEW_TYPE_N_MEDIUM -> {
                 val view=LayoutInflater.from(parent.context).inflate(R.layout.n_medium_widgets_recycler,parent,false)
-                return NLarge(view)
+                return NMedium(view)
             }
-            VIEW_TYPE_SINGLE_SCREEN -> {
-                val view=LayoutInflater.from(parent.context).inflate(R.layout.single_screen,parent,false)
-                return NLarge(view)
-            }
+//            VIEW_TYPE_SINGLE_SCREEN -> {
+//                val view=LayoutInflater.from(parent.context).inflate(R.layout.single_screen,parent,false)
+//                return SingleCard(view)
+//            }
         }
 
-        val view=LayoutInflater.from(parent.context).inflate(R.layout.two_card_widget,parent,false)
-        return ViewHolder(view)
+        val view=LayoutInflater.from(parent.context).inflate(R.layout.single_screen,parent,false)
+        return SingleScreen(view)
     }
 
     override fun getItemViewType(position: Int): Int {
@@ -80,6 +81,32 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
         else if(holder is SingleCard){
             holder.itemTitle.text="Call us to order"
+        }
+        else if(holder is NLarge) {
+            holder.nLagraHorizontalRecycler.layoutManager = LinearLayoutManager(
+                context,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
+            holder.nLagraHorizontalRecycler.adapter = NLagreAdapter(context)
+
+        }
+        else if(holder is NSmall){
+            holder.nSamllHorizontalRecycler.layoutManager=LinearLayoutManager(
+                context,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
+            holder.nSamllHorizontalRecycler.adapter=NSmallAdapter(context)
+        }
+            else if(holder is NMedium){
+                holder.nMediumHorizontalRecycler.layoutManager=LinearLayoutManager(
+                    context,
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
+            holder.nMediumHorizontalRecycler.adapter=NMediumlAdapter(context)
+
         }
     }
 
@@ -128,8 +155,31 @@ class RecyclerAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
     }
     inner class NLarge(itemView: View): RecyclerView.ViewHolder(itemView) {
+            val nLagraHorizontalRecycler:RecyclerView
+
+        init {
+            nLagraHorizontalRecycler=itemView.findViewById(R.id.n_large_recycler_view)
+        }
+    }
+    inner class NSmall(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val nSamllHorizontalRecycler:RecyclerView
+
+        init {
+            nSamllHorizontalRecycler=itemView.findViewById(R.id.nSmallrecyclerLayout)
+        }
+    }
+    inner class NMedium(itemView: View): RecyclerView.ViewHolder(itemView) {
+        val nMediumHorizontalRecycler:RecyclerView
+
+        init {
+            nMediumHorizontalRecycler=itemView.findViewById(R.id.nMediumRecycle)
+        }
+    }
+    inner class SingleScreen(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     }
+
+
 
 
 }

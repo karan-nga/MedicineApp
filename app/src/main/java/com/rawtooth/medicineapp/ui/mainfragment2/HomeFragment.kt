@@ -33,8 +33,9 @@ class HomeFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainFragment2ViewModel::class.java)
-        binding.mainRecycler.adapter = RecyclerAdapter()
+        binding.mainRecycler.adapter = RecyclerAdapter(requireContext())
 
     }
+
 
 }

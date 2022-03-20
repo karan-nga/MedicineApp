@@ -6,19 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".consult.consult"
     android:orientation="vertical">
-    <androidx.appcompat.widget.SearchView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/search_view"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="22dp"/>
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="18dp"
+        android:text="Popular Specialities"
+        android:layout_marginStart="22dp"/>
+
+
     <GridLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="450dp"
         android:alignmentMode="alignMargins"
     android:columnCount="3"
     android:columnOrderPreserved="false"
-    android:padding="14sp"
     android:rowCount="3">
         <androidx.cardview.widget.CardView
             android:id="@+id/card_covid"
@@ -26,9 +40,8 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+        android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -51,7 +64,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/robotoregular"
-                    android:text="Covid Conultation"
+                    android:text="Covid \nConsultation"
+                    android:gravity="center"
                     android:layout_marginTop="16dp"
                     android:textAlignment="center"
                     android:textColor="#1C9634"
@@ -64,9 +78,8 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -102,9 +115,9 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -140,9 +153,9 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -178,9 +191,9 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -216,9 +229,9 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -254,9 +267,9 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -292,9 +305,9 @@
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="22dp"
+
+            android:layout_marginBottom="8dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
@@ -328,11 +341,11 @@
             android:id="@+id/card_nephrology"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="8dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 

@@ -1,16 +1,368 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.cart">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/bag_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E5E5E5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#E5E5E5"
+        app:title="     Bag"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bag_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/order_back_2"
+        app:layout_constraintTop_toBottomOf="@id/bag_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/bag_imgv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bag_toolbar2"
+            app:layout_constraintBottom_toBottomOf="@id/bag_toolbar2"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/img4"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:id="@+id/bag_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/bag_imgv1"
+            app:layout_constraintTop_toTopOf="@id/bag_toolbar2"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="11dp"
+            android:text="Telma 40mg Strip Of\n30 Tablets"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/bag_imgv1"
+            app:layout_constraintBottom_toTopOf="@id/spinner_type"
+            android:layout_marginStart="59dp"
+            android:text="Rs 182"
+            android:textColor="@color/black"
+            android:textSize="11sp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/order_delete"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/order_spinner_back"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toEndOf="@id/bag_imgv1"
+            app:layout_constraintBottom_toBottomOf="@id/bag_toolbar2"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/spinnerItems"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bag_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:background="@drawable/order_back1"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/bag_toolbar2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toTopOf="@id/bag_view2" />
+
+        <TextView
+            android:id="@+id/oder_address_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="37dp"
+            android:text="Lorem ipsum dolor sit amet,\nLorem ipsum dolor sit amet,"
+            android:textColor="#787878"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toTopOf="@id/bag_view2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:text="change"
+            android:textAllCaps="false"
+            android:textColor="#73D686"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/bag_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toTopOf="@id/bag_view2">
+
+            <Button
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:onClick="goToAddress"
+                android:layout_marginTop="90dp"
+                android:layout_weight="1"
+                android:background="@drawable/bag_btn1_back_layout"
+                android:gravity="center"
+                android:text="Choose prescription"
+                android:textAllCaps="false"
+                android:textColor="#73D686"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="26dp"
+                android:layout_weight="1"
+                android:background="@drawable/bag_btn2_back_layout"
+                android:gravity="center"
+                android:text="Add prescription"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="28dp"
+            android:text="Price Details"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_ll1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="28dp"
+            android:text="Price Details"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_ll1" />
+
+        <TextView
+            android:id="@+id/bag_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="28dp"
+            android:text="Price Details"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_ll1" />
+
+        <TextView
+            android:id="@+id/bag_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Total MRP"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_price" />
+
+        <TextView
+            android:id="@+id/bag_mpr_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Discount on MRP"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_mrp" />
+
+        <TextView
+            android:id="@+id/bag_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Coupon Discount"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_mpr_discount" />
+
+        //Prices
+        <TextView
+            android:id="@+id/oder_mrp_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/bag_ll1"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="12dp"
+            android:text="Rs 222"
+            android:textColor="@color/black"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/oder_mrp_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/oder_mrp_price"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:text="-Rs 150"
+            android:textColor="@color/black"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/apply_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/oder_mrp_discount_price"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:text="Apply coupon"
+            android:textColor="@color/black"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/bag_coupon"
+            app:layout_constraintStart_toStartOf="@id/bag_view2"
+            android:text="Total Amount"
+            android:textSize="12sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/bag_view2"
+            app:layout_constraintTop_toBottomOf="@+id/apply_coupons"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="13sp"
+            android:layout_marginEnd="12dp"
+            android:text="Rs 77"
+            android:textColor="@color/black"
+            android:textSize="11sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/single_screen_v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_3"
+        android:layout_marginStart="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@id/bag_view2"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/single_screen_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/single_screen_v1"
+            app:layout_constraintLeft_toLeftOf="@id/single_screen_v1"
+            android:text="Become a member!"
+            android:layout_marginLeft="21dp"
+            android:textColor="#000000"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/single_screen_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/single_screen_v1"
+            app:layout_constraintLeft_toLeftOf="@id/single_screen_v1"
+            android:text="Save flat 10% extra on medicines and \n enjoy FREE delivery"
+            android:layout_marginLeft="21dp"
+            android:textColor="#000000"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/robotoregular"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smiling_women"
+            app:layout_constraintEnd_toEndOf="@id/single_screen_v1"
+            app:layout_constraintTop_toTopOf="@id/single_screen_v1"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="6dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star1"
+            app:layout_constraintEnd_toEndOf="@id/single_screen_v1"
+            app:layout_constraintTop_toTopOf="@id/single_screen_v1"
+            android:layout_marginEnd="71dp"
+            android:layout_marginTop="6dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star2"
+            app:layout_constraintEnd_toEndOf="@id/single_screen_v1"
+            app:layout_constraintTop_toTopOf="@id/single_screen_v1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="33dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

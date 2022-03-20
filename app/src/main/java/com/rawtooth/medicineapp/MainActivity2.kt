@@ -1,8 +1,11 @@
 package com.rawtooth.medicineapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
+import com.rawtooth.medicineapp.cart.EnterPatientDetails
 import com.rawtooth.medicineapp.databinding.MainActivity2Binding
 import com.rawtooth.medicineapp.fragments.cart
 import com.rawtooth.medicineapp.fragments.user
@@ -34,5 +37,9 @@ class MainActivity2 : AppCompatActivity() {
         val tranction = supportFragmentManager.beginTransaction()
         tranction.replace(R.id.container, fragment)
         tranction.commit()
+    }
+
+    fun consult(view: View) {
+        startActivity(Intent(this,com.rawtooth.medicineapp.consult.consult::class.java))
     }
 }

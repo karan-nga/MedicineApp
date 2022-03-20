@@ -6,20 +6,16 @@
             type="com.rawtooth.medicineapp.models.Single_card" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/single_card_view1"
     android:layout_height="wrap_content"
     android:layout_marginRight="22dp"
     android:layout_marginLeft="22dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/rectangle_2"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <View
-        android:id="@+id/single_card_view1"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/rectangle_2"
-        />
+
     <TextView
         android:id="@+id/single_card_tv1"
         android:layout_width="wrap_content"

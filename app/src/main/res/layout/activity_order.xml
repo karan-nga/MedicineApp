@@ -45,8 +45,8 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="197dp"
         android:layout_marginStart="22dp"
-        android:background="@drawable/rectangle_3"
-        android:elevation="3dp"
+
+        android:elevation="10dp"
         />
 
    <TextView
@@ -136,8 +136,7 @@
         android:layout_marginTop="28dp"/>
 
 
-<include layout="@layout/single_screen"
-    app:layout_constraintTop_toBottomOf="@id/bag_view2"/>
+
 
 
 

@@ -25,12 +25,14 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             app:card="@{card1}"
+            android:src="@drawable/notes"
             android:layout_height="wrap_content"/>
 
         <include
             android:layout_width="0dp"
             android:layout_weight="1"
             app:card="@{card1}"
+            android:src="@drawable/doctor"
             android:layout_marginStart="8dp"
             android:layout_height="wrap_content"
             layout="@layout/card_1_layout" />

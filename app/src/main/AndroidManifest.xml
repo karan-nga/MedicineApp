@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name="com.rawtooth.loginresgister.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NLagreActivity"
+            android:exported="false" />
+        <activity
             android:name=".cart.EnterPatientDetails"
             android:exported="false" />
         <activity

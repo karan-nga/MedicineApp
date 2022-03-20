@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable-v24/bag_btn2_back_layout.xml" value="0.191" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable-v24/buttonshape.xml" value="0.2395" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable-v24/patient_details_back0.xml" value="0.2395" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/address_back.xml" value="0.1275" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/bag_back_2.xml" value="0.191" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/bag_btn1_back_layout.xml" value="0.191" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/button_back.xml" value="0.16" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/checkbox_back.xml" value="0.1275" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/circle_img.xml" value="0.1675" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/coupons_back.xml" value="0.1275" />
@@ -15,14 +17,19 @@
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/document_top.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ellipse_6.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/green_small_circle.xml" value="0.2155" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.2395" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2395" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_insurance.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1675" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/ic_person.xml" value="0.2155" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/large_background_back.xml" value="0.16" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/medium_background_back.xml" value="0.16" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/member_3.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/nav_back.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/oder_view.xml" value="0.1345" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/order_back1.xml" value="0.16" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/patient_details_back1.xml" value="0.2395" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/rectangle_1.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/rectangle_2.xml" value="0.2155" />
@@ -31,22 +38,26 @@
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/rectangle_5.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/rectangle_6.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/rectangle_7.xml" value="0.2155" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/small_image_back.xml" value="0.16" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/smiling_wom.xml" value="0.2155" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/two_card_back.xml" value="0.16" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/unsplash_ef.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/unsplash_zh.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/user_singlr_line.xml" value="0.191" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/vector.xml" value="0.2155" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_consult.xml" value="0.264" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_doctor_consult.xml" value="0.5" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_enter_patient_details.xml" value="0.536" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_doctor_consult.xml" value="0.264" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_enter_patient_details.xml" value="0.4" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_order.xml" value="0.4" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_nlagre.xml" value="0.25" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_order.xml" value="0.264" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_patient_details.xml" value="0.25" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_user_address.xml" value="0.2" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_user_coupons.xml" value="0.536" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_user_order.xml" value="0.264" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_user_reminder.xml" value="0.25" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/card_1_layout.xml" value="1.1290322580645162" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/card_1_layout.xml" value="0.4" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/consult.xml" value="0.25" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/crousel_3.xml" value="0.3146417445482866" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
@@ -59,12 +70,12 @@
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_large_widgets.xml" value="0.25" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_large_widgets_recycler.xml" value="0.25" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_medium_layout.xml" value="0.536" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_medium_widgets_recycler.xml" value="0.4" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_medium_widgets_recycler.xml" value="0.2" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_small_layout.xml" value="0.8" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/n_small_widgets_recycler.xml" value="0.4" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/search_view.xml" value="0.4" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/single_card.xml" value="0.536" />
-        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/single_screen.xml" value="0.4" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/single_card.xml" value="0.4" />
+        <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/single_screen.xml" value="0.264" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/two_card_widget.xml" value="0.4" />
         <entry key="..\:/Users/Karan/AndroidStudioProjects/MedicineApp/app/src/main/res/menu/nav_menu.xml" value="0.25" />
       </map>

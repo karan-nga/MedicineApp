@@ -47,8 +47,8 @@
         app:layout_constraintStart_toStartOf="@+id/rec42"
         android:text="@string/order_according_to_what_prescripted"
         android:textColor="@color/black"
-        android:layout_marginTop="21dp"
-        android:layout_marginLeft="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="21dp"
         android:textSize="8dp"
         />
     <TextView
@@ -171,6 +171,18 @@
         android:layout_marginTop="44dp"
         android:textSize="8dp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rectangle42"
+        app:layout_constraintStart_toStartOf="@id/rectangle42"
+        android:src="@drawable/doc2"
+        android:layout_marginLeft="253.77dp"
+        android:layout_marginTop="10.3dp"
+        android:layout_marginRight="6.9dp"
+        android:layout_marginBottom="0.1dp"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -188,14 +200,14 @@
         android:id="@+id/rec65"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/rectangle42"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/rec65"
-        android:layout_marginTop="44dp"
         android:layout_marginLeft="22dp"
+        android:layout_marginTop="44dp"
         android:layout_marginRight="22dp"
-        />
+        android:src="@drawable/rec65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle42" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

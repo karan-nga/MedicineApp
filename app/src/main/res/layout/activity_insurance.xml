@@ -156,6 +156,4 @@
         android:fontFamily="@font/robotoregular"/>
 
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

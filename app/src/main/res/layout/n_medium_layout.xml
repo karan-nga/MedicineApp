@@ -2,8 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-
-    android:layout_marginTop="10dp"
     android:layout_marginEnd="13dp"
     android:background="@drawable/medium_background_back"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -31,7 +29,7 @@
         android:lineSpacingExtra="2sp"
         android:text="@string/telam_40_5m"
         android:textAppearance="@style/telam_40_5m"
-        android:translationY="-0.81sp"
+      android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="7dp"
@@ -45,7 +43,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/n_medium_layout_tv1"
         android:text="Rs.123"
-        android:textSize="8sp"
+        android:textSize="10sp"
         android:textColor="#73D686"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="8dp"

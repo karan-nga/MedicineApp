@@ -30,7 +30,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/robotoregular"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
     <TextView
@@ -45,7 +45,7 @@
         android:layout_marginTop="38dp"
         android:layout_marginBottom="28dp"
         android:fontFamily="@font/robotoregular"
-        android:textSize="10sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
     <ImageView

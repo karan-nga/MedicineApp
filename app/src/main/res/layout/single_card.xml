@@ -24,7 +24,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="11dp"
         android:singleLine="true"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@id/single_card_view1"
         app:layout_constraintLeft_toLeftOf="@id/single_card_view1"
         app:layout_constraintTop_toTopOf="@id/single_card_view1"

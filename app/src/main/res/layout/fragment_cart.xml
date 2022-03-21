@@ -24,6 +24,7 @@
         android:layout_marginStart="22dp"
         android:layout_marginEnd="22dp"
         android:background="@drawable/order_back_2"
+        android:elevation="10dp"
         app:layout_constraintTop_toBottomOf="@id/bag_toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -281,6 +282,7 @@
             app:layout_constraintTop_toBottomOf="@id/bag_coupon"
             app:layout_constraintStart_toStartOf="@id/bag_view2"
             android:text="Total Amount"
+            android:layout_marginStart="13dp"
             android:textSize="12sp"
             android:layout_marginTop="30dp"
             android:textColor="@color/black"/>
@@ -321,7 +323,7 @@
             android:layout_marginTop="14dp"
             android:layout_marginBottom="60dp"
             android:fontFamily="@font/robotoregular"
-            android:textSize="14sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <TextView
@@ -336,7 +338,7 @@
             android:layout_marginTop="38dp"
             android:layout_marginBottom="28dp"
             android:fontFamily="@font/robotoregular"
-            android:textSize="10sp"
+            android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <ImageView

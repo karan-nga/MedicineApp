@@ -25,14 +25,14 @@
         />
     <TextView
         android:id="@+id/user_coupon_tv1"
-        android:layout_width="37dp"
-        android:layout_height="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/user_coupons_v1"
         app:layout_constraintStart_toStartOf="@id/user_coupons_v1"
         android:lineSpacingExtra="0sp"
         android:gravity="top"
         android:text="CODE25"
-        android:textSize="10sp"
+        android:textSize="15sp"
         android:textColor="@color/black"
         android:layout_marginStart="21dp"
         android:layout_marginTop="14dp"
@@ -46,9 +46,11 @@
         android:text="Flat 25% off on \n orders above Rs 1000"
         android:lineSpacingExtra="2sp"
         android:layout_marginTop="35dp"
-        android:textSize="8sp"
+        android:textSize="11sp"
         android:textColor="@color/black"
         android:layout_marginStart="21dp"
+        app:layout_constraintEnd_toEndOf="@id/user_coupons_v1"
+        android:layout_marginEnd="10dp"
         android:gravity="top"
         />
 

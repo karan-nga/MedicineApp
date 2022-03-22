@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#73D686"
+    tools:context="com.rawtooth.loginresgister.Login">
+    <View
+        android:id="@+id/ellipse_7"
+        android:layout_width="281dp"
+        android:layout_height="281dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="-104dp"
+        android:background="@drawable/ellipse7" />
+
+    <View
+        android:id="@+id/ellipse_8"
+        android:layout_width="281dp"
+        android:layout_height="281dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-162dp"
+        android:layout_marginTop="491dp"
+        android:background="@drawable/ellipse8" />
+
+    <View
+        android:id="@+id/ellipse_9"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="177dp"
+        android:background="@drawable/ellipse9" />
+
+    <View
+        android:id="@+id/ellipse_10"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="491dp"
+        android:background="@drawable/ellipse10" />
+
+    <EditText
+        android:id="@+id/login_edt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/rectangle46"
+        android:hint="     Email" />
+
+    <EditText
+        android:id="@+id/login_edt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="286dp"
+        android:background="@drawable/rectangle47"
+        android:hint="     Password" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="356dp"
+        android:background="@drawable/button_back"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textAppearance="@style/log_in"
+        android:textColor="@color/black"
+        app:cornerRadius="20dp" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -10,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
-            android:name="com.rawtooth.loginresgister.Signup"
-            android:exported="false" />
-        <activity
-            android:name=".activity_login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.rawtooth.anchal.insurance.Prescription_activity"
             android:exported="false" />
         <activity
@@ -68,7 +56,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

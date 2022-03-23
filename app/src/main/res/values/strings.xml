@@ -12,6 +12,8 @@
     <string name="upload_your_prescription">Upload your prescription</string>
     <string name="your_prescriptions">Your prescriptions</string>
     <string name="why_choose_this_plan">Why Choose This Plan?</string>
+    <string name="lorem_ipsum_dolor_sit_amet_lorem_ipsum_dolor_sit_amet">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</string>
+    <string name="select_appointment_time">Select Appointment Time</string>
 
 
 </resources>

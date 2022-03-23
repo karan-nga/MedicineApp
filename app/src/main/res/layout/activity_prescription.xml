@@ -188,7 +188,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/rectangle42"
         app:layout_constraintStart_toStartOf="@id/rectangle42"
-        android:text="Your prescriptions"
+        android:text="@string/your_prescriptions"
         android:textColor="#119A7E"
         android:textStyle="bold"
         android:textSize="14dp"

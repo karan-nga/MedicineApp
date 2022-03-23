@@ -48,7 +48,7 @@
             android:singleLine="true"
             android:text="Upload your prescription"
             android:textColor="#000000"
-            android:textSize="15sp"
+            android:textSize="13sp"
             app:layout_constraintLeft_toRightOf="@id/iv_card1_ic"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/iv_card1_ic"/>
@@ -116,7 +116,7 @@
                 android:singleLine="true"
                 android:text="Consult the doctor"
                 android:textColor="#000000"
-                android:textSize="15sp"
+                android:textSize="13sp"
                 app:layout_constraintLeft_toRightOf="@id/iv_card1_ic2"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="@id/iv_card1_ic2"

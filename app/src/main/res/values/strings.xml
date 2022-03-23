@@ -10,6 +10,8 @@
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra</string>
     <string name="order_according_to_what_prescripted">Order according to what prescripted</string>
     <string name="upload_your_prescription">Upload your prescription</string>
+    <string name="your_prescriptions">Your prescriptions</string>
+    <string name="why_choose_this_plan">Why Choose This Plan?</string>
 
 
 </resources>

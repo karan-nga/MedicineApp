@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name="com.rawtooth.anchal.insurance.Messages"
+            android:exported="false" />
+        <activity
+            android:name="com.rawtooth.anchal.insurance.Insurance_Details"
+            android:exported="false" />
+        <activity
             android:name="com.rawtooth.anchal.insurance.Prescription_activity"
             android:exported="false" />
         <activity
@@ -57,8 +63,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

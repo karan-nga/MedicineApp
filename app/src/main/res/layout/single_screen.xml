@@ -26,12 +26,12 @@
         app:layout_constraintTop_toTopOf="@id/single_screen_v1"
         app:layout_constraintLeft_toLeftOf="@id/single_screen_v1"
         android:text="Become a member!"
-        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
         android:textColor="#000000"
         android:layout_marginTop="14dp"
         android:layout_marginBottom="60dp"
         android:fontFamily="@font/robotoregular"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         />
     <TextView
@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="@id/single_screen_v1"
         app:layout_constraintLeft_toLeftOf="@id/single_screen_v1"
         android:text="Save flat 10% extra on medicines and \nenjoy FREE delivery"
-        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
         android:textColor="#000000"
         android:layout_marginTop="38dp"
         android:layout_marginBottom="28dp"

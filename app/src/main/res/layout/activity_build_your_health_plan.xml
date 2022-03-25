@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rawtooth.anchal.insurance.BuildYourHealthPlan">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="         Build Your Health Plan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E5E5E5"/>
+
+    <ImageView
+        android:id="@+id/health59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/health59"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="22dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/happyman"
+        app:layout_constraintTop_toTopOf="@id/health59"
+        app:layout_constraintStart_toStartOf="@id/health59"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myself"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/health59"
+        app:layout_constraintStart_toStartOf="@id/health59"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="57dp"
+        android:fontFamily="@font/robotoregular"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_birth"
+        app:layout_constraintTop_toTopOf="@id/health59"
+        app:layout_constraintStart_toStartOf="@id/health59"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="57dp"
+        android:textSize="8sp"/>
+
+    <ImageView
+        android:id="@+id/rec68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rec68"
+        app:layout_constraintTop_toBottomOf="@id/health59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="4dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/parents"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="21dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/family"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="57dp"
+        android:fontFamily="@font/robotoregular"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spouse"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="57dp"
+        android:textSize="8sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daughter_s"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginTop="61dp"
+        android:layout_marginLeft="57dp"
+        android:textSize="8sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sons_s"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="57dp"
+        android:textSize="8sp"/>
+
+    <ImageView
+        android:id="@+id/rec70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rec70"
+        app:layout_constraintTop_toBottomOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="19dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cover_amount"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rec70"
+        app:layout_constraintStart_toStartOf="@id/rec70"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"/>
+    <ImageView
+        android:id="@+id/enteramount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rec115"
+        app:layout_constraintTop_toTopOf="@id/rec70"
+        app:layout_constraintStart_toStartOf="@id/rec70"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
+    <TextView
+        android:id="@+id/rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="@id/enteramount"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="@id/enteramount"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/enteramount"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        android:background="@drawable/rec116"
+        android:text="Rs 1 Lakh"
+        android:textColor="@color/green"
+        android:textSize="8sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/enteramount"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        android:background="@drawable/rec116"
+        android:text="Rs 1 Lakh"
+        android:textColor="@color/green"
+        android:textSize="8sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="78dp"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/enteramount"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        android:background="@drawable/rec116"
+        android:text="Rs 1 Lakh"
+        android:textColor="@color/green"
+        android:textSize="8sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="138dp"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/enteramount"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        android:background="@drawable/rec116"
+        android:text="Rs 1 Lakh"
+        android:textColor="@color/green"
+        android:textSize="8sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="198dp"/>
+
+    <ImageView
+        android:id="@+id/line9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line9"
+        app:layout_constraintTop_toTopOf="@id/rec70"
+        app:layout_constraintStart_toStartOf="@id/enteramount"
+        app:layout_constraintEnd_toEndOf="@id/rec70"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="18dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintStart_toStartOf="@id/rec70"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Pincode"
+        android:textSize="10sp"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_current_address_pincode"
+        app:layout_constraintTop_toBottomOf="@id/line9"
+        app:layout_constraintStart_toStartOf="@id/rec70"
+        android:textSize="8sp"
+        android:textColor="#DCDBDB"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="4dp"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/nav_back"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/nav_menu" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

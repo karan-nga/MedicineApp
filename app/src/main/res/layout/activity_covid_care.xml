@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rawtooth.anchal.insurance.CovidCare">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="       Covid Care"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E5E5E5"/>
+
+    <ImageView
+        android:id="@+id/rect59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rect59"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/testdetails"
+        app:layout_constraintTop_toTopOf="@id/rect59"
+        app:layout_constraintStart_toStartOf="@id/rect59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid IgG Antibody Test"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rect59"
+        app:layout_constraintStart_toStartOf="@id/rect59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="55dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 300"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rect59"
+        app:layout_constraintStart_toStartOf="@id/rect59"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="55dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        app:layout_constraintTop_toTopOf="@id/rect59"
+        app:layout_constraintStart_toStartOf="@id/rect59"
+        app:layout_constraintEnd_toEndOf="@id/rect59"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginRight="19dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+
+    <ImageView
+        android:id="@+id/recta59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rect59"
+        app:layout_constraintTop_toBottomOf="@id/rect59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/testdetails"
+        app:layout_constraintTop_toTopOf="@id/recta59"
+        app:layout_constraintStart_toStartOf="@id/recta59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid Screening Advanced"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/recta59"
+        app:layout_constraintStart_toStartOf="@id/recta59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="55dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 1499"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/recta59"
+        app:layout_constraintStart_toStartOf="@id/recta59"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="55dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        app:layout_constraintTop_toTopOf="@id/recta59"
+        app:layout_constraintStart_toStartOf="@id/recta59"
+        app:layout_constraintEnd_toEndOf="@id/recta59"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginRight="19dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/rectan59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rect59"
+        app:layout_constraintTop_toBottomOf="@id/recta59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/testdetails"
+        app:layout_constraintTop_toTopOf="@id/rectan59"
+        app:layout_constraintStart_toStartOf="@id/rectan59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid Screening Basic"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rectan59"
+        app:layout_constraintStart_toStartOf="@id/rectan59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="55dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 999"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rectan59"
+        app:layout_constraintStart_toStartOf="@id/rectan59"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="55dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        app:layout_constraintTop_toTopOf="@id/rectan59"
+        app:layout_constraintStart_toStartOf="@id/rectan59"
+        app:layout_constraintEnd_toEndOf="@id/rectan59"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginRight="19dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/rectang59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rect59"
+        app:layout_constraintTop_toBottomOf="@id/rectan59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/testdetails"
+        app:layout_constraintTop_toTopOf="@id/rectang59"
+        app:layout_constraintStart_toStartOf="@id/rectang59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="13dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid Infection Monitoring"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rectang59"
+        app:layout_constraintStart_toStartOf="@id/rectang59"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="55dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 1999"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/rectang59"
+        app:layout_constraintStart_toStartOf="@id/rectang59"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="55dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        app:layout_constraintTop_toTopOf="@id/rectang59"
+        app:layout_constraintStart_toStartOf="@id/rectang59"
+        app:layout_constraintEnd_toEndOf="@id/rectang59"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginRight="19dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

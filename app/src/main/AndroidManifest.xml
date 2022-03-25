@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name="com.rawtooth.anchal.insurance.CovidCare"
+            android:exported="false" />
+        <activity
             android:name="com.rawtooth.anchal.insurance.TestDetails"
             android:exported="false" />
         <activity

@@ -14,14 +14,98 @@
         android:background="@drawable/rectangle_6"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle_3"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        android:layout_height="40dp"
+        android:id="@+id/rectangle_3">
+
+        <TextView
+            android:id="@+id/tv_card1_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@id/rectangle_3"
+            app:layout_constraintLeft_toLeftOf="@id/rectangle_3"
+            app:layout_constraintTop_toTopOf="@id/rectangle_3"
+
+            tools:text="Search for medicines, lab tests, doctors" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/rectangle_3"
+            app:layout_constraintTop_toTopOf="@id/rectangle_3"
+            android:src="@drawable/vector1"
+            app:layout_constraintBottom_toBottomOf="@id/rectangle_3"
+            android:layout_marginRight="19.3dp"
+            android:layout_marginTop="11.08dp"
+            android:layout_marginBottom="11.08dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
 
     <ImageView
+        android:id="@+id/doctorConsult_iv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="@id/view"
         android:src="@drawable/doctor_consult_img"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toTopOf="@id/consult_v1"/>
+        android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Dr. Pranita Saxena"
+            app:layout_constraintStart_toEndOf="@id/doctorConsult_iv1"
+            app:layout_constraintTop_toTopOf="@id/view"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="14dp"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            app:layout_constraintTop_toBottomOf="@id/doctor_name"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/doctor_call"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

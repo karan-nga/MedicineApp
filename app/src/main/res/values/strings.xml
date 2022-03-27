@@ -22,6 +22,11 @@
     <string name="sons_s">Sons(s)</string>
     <string name="cover_amount">Cover Amount</string>
     <string name="your_current_address_pincode">Your Current Address Pincode</string>
+    <string name="bullted_list"><b><big>Get access to</big></b>
+        \n <li>Item one</li>
+        \n <li>Item two</li>
+        \n <li>Item three</li>
+    </string>
 
 
 </resources>

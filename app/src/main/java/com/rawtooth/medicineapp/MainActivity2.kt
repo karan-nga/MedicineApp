@@ -12,6 +12,7 @@ import com.rawtooth.medicineapp.fragments.Insurancee
 import com.rawtooth.medicineapp.fragments.cart
 import com.rawtooth.medicineapp.fragments.user
 import com.rawtooth.medicineapp.ui.mainfragment2.HomeFragment
+import com.rawtooth.subscription.MemeberSub
 
 class MainActivity2 : AppCompatActivity() {
     lateinit var MainBinding:MainActivity2Binding
@@ -48,5 +49,9 @@ class MainActivity2 : AppCompatActivity() {
 
     fun prescription(view: View) {
         startActivity(Intent(this,Prescription_activity::class.java))
+    }
+
+    fun subcription(view: View) {
+        startActivity(Intent(this,MemeberSub::class.java))
     }
 }

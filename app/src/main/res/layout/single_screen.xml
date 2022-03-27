@@ -7,6 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <View
+        android:onClick="subcription"
         android:id="@+id/single_screen_v1"
         android:layout_width="match_parent"
         android:layout_height="90dp"

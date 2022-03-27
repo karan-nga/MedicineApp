@@ -304,6 +304,7 @@
         android:id="@+id/single_screen_v1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:background="@drawable/member_3"
         android:layout_marginStart="22dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -318,12 +319,13 @@
             app:layout_constraintTop_toTopOf="@id/single_screen_v1"
             app:layout_constraintLeft_toLeftOf="@id/single_screen_v1"
             android:text="Become a member!"
+            android:textStyle="bold"
             android:layout_marginLeft="21dp"
-            android:textColor="#000000"
+            android:textColor="#1C9634"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="60dp"
             android:fontFamily="@font/robotoregular"
-            android:textSize="18sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <TextView
@@ -334,11 +336,11 @@
             app:layout_constraintLeft_toLeftOf="@id/single_screen_v1"
             android:text="Save flat 10% extra on medicines and \n enjoy FREE delivery"
             android:layout_marginLeft="21dp"
-            android:textColor="#000000"
+            android:textColor="#1C9634"
             android:layout_marginTop="38dp"
             android:layout_marginBottom="28dp"
             android:fontFamily="@font/robotoregular"
-            android:textSize="13sp"
+            android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <ImageView

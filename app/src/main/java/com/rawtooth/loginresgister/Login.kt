@@ -19,8 +19,8 @@ class Login : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
-        val email=bindig.loginEdt1.text.toString()
-        val pass=bindig.loginEdt2.text.toString()
+        val email=bindig.loginEdt1.text.toString().trim()
+        val pass=bindig.loginEdt2.text.toString().trim()
         if(email=="admin@gmail.com"&&pass=="root"){
             Toast.makeText(this,"Success",Toast.LENGTH_SHORT).show()
             startActivity(Intent(this,MainActivity2::class.java))

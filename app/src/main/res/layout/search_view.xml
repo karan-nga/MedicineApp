@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginLeft="22dp"
     android:layout_marginRight="22dp"
-    android:layout_marginTop="62dp"
+
     android:background="@drawable/rectangle_3">
 
 

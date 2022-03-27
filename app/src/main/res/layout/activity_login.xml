@@ -41,7 +41,7 @@
         android:layout_marginRight="22dp"
         android:layout_marginTop="53dp"
         android:background="@drawable/rectangle46"
-        android:hint="     Email" />
+        android:hint="     admin@gmail.com" />
 
     <EditText
         android:id="@+id/login_edt_2"
@@ -54,7 +54,7 @@
         android:layout_marginRight="22dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/rectangle47"
-        android:hint="     Password" />
+        android:text="     root" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"

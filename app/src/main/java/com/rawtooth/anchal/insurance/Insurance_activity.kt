@@ -16,5 +16,8 @@ Insurance_activity : AppCompatActivity() {
         binding.rec60.setOnClickListener{
             startActivity(Intent(this,Insurance_Details::class.java))
         }
+        binding.rec59.setOnClickListener{
+            startActivity(Intent(this,BuildYourHealthPlan::class.java))
+        }
     }
 }

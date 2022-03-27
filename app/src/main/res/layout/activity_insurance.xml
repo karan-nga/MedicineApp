@@ -30,6 +30,7 @@
 
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/buyNewPlan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/rec59"
@@ -110,6 +111,7 @@
         android:layout_marginBottom="55dp"
         />
     <com.google.android.material.button.MaterialButton
+        android:id="@id/buyhealthcard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/rec60"
@@ -127,7 +129,6 @@
         android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/buyhealthcard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@id/rec60"

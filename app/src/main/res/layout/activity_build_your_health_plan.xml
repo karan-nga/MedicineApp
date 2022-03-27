@@ -50,6 +50,7 @@
         android:textSize="10sp"
         />
     <TextView
+        android:id="@+id/dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/date_of_birth"
@@ -58,6 +59,36 @@
         android:layout_marginTop="28dp"
         android:layout_marginLeft="57dp"
         android:textSize="8sp"/>
+
+    <ImageView
+        android:id="@+id/line10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dob"
+        app:layout_constraintStart_toStartOf="@id/health59"
+        android:src="@drawable/line10"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="58dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date"
+        android:textSize="8sp"
+        android:inputType="date"
+        app:layout_constraintTop_toTopOf="@id/health59"
+        app:layout_constraintStart_toStartOf="@id/health59"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="60dp"/>
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/calendar"
+        app:layout_constraintTop_toTopOf="@id/health59"
+        app:layout_constraintStart_toStartOf="@id/health59"
+        android:layout_marginLeft="277.9dp"
+        android:layout_marginTop="29.12dp"/>
+
 
     <ImageView
         android:id="@+id/rec68"
@@ -102,6 +133,45 @@
         android:layout_marginTop="42dp"
         android:layout_marginLeft="57dp"
         android:textSize="8sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line11"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginTop="49dp"
+        android:layout_marginLeft="93dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="24dp"/>
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="13dp"
+        android:background="@drawable/rec120"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginLeft="259dp"
+        android:layout_marginTop="59dp"
+        android:text="- 1 +"
+        android:textColor="@color/black"
+        />
+
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="13dp"
+        android:background="@drawable/rec120"
+        app:layout_constraintTop_toTopOf="@id/rec68"
+        app:layout_constraintStart_toStartOf="@id/rec68"
+        android:layout_marginLeft="259dp"
+        android:layout_marginTop="80dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -173,6 +243,7 @@
         android:layout_height="wrap_content"
         android:hint="Enter Amount"
         android:inputType="number"
+        android:textSize="14sp"
         app:layout_constraintTop_toTopOf="@id/enteramount"
         app:layout_constraintStart_toStartOf="@id/enteramount"
         android:layout_marginLeft="37dp"
@@ -276,6 +347,8 @@
         app:itemIconTint="#fff"
         app:itemTextColor="#fff"
         app:menu="@menu/nav_menu" />
+
+
 
 
 

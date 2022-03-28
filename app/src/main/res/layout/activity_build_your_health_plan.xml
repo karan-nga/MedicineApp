@@ -84,6 +84,7 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:background="@drawable/calendar"
+        android:backgroundTint="@color/black"
         app:layout_constraintTop_toTopOf="@id/health59"
         app:layout_constraintStart_toStartOf="@id/health59"
         android:layout_marginLeft="277.9dp"
@@ -154,6 +155,7 @@
         android:layout_width="35dp"
         android:layout_height="13dp"
         android:background="@drawable/rec120"
+        android:backgroundTintMode="@color/green"
         app:layout_constraintTop_toTopOf="@id/rec68"
         app:layout_constraintStart_toStartOf="@id/rec68"
         android:layout_marginLeft="259dp"
@@ -347,6 +349,25 @@
         app:itemIconTint="#fff"
         app:itemTextColor="#fff"
         app:menu="@menu/nav_menu" />
+
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="@id/bottom_nav"
+        app:layout_constraintStart_toStartOf="@id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="10dp"
+        android:text="View Plans"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
 
 
 

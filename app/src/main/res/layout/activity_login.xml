@@ -58,7 +58,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/login_edt_2"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
         android:textStyle="bold"
         android:textAllCaps="false"
         android:textAppearance="@style/log_in"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         app:cornerRadius="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

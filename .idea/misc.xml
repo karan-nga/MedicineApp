@@ -85,10 +85,11 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/drawable/roundbutton.xml" value="0.193" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_build_your_health_plan.xml" value="0.264" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_consult.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_consult2.xml" value="0.264" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_covid_care.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_doctor_consult.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_enter_patient_details.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_insurance.xml" value="0.264" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_insurance.xml" value="0.2" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_insurance_details.xml" value="0.264" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_login.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
@@ -96,7 +97,7 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_nlagre.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_order.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_patient_details.xml" value="0.23802083333333332" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_prescription.xml" value="0.72" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_prescription.xml" value="0.176" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_signup.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_test_details.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_user_address.xml" value="0.23802083333333332" />
@@ -105,6 +106,7 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/activity_user_reminder.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/card_1_layout.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/crousel_3.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MedicineApp/app/src/main/res/layout/fragment_insurancee.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>

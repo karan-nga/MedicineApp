@@ -57,6 +57,7 @@
           android:layout_marginBottom="22dp"/>
 
       <com.google.android.material.button.MaterialButton
+          android:id="@+id/test_addBtn"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="#73D686"

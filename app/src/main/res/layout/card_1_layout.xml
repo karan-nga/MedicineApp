@@ -46,7 +46,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="4dp"
             android:singleLine="true"
-            android:text="Upload your prescription"
+            android:text="Upload your\nprescription"
             android:textColor="#000000"
             android:textSize="13sp"
             app:layout_constraintLeft_toRightOf="@id/iv_card1_ic"

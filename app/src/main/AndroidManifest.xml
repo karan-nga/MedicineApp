@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
-            android:name="com.rawtooth.anchal.insurance.Consult2"
-            android:exported="false" />
-        <activity
             android:name="com.rawtooth.subscription.MemeberSub"
             android:exported="false" />
         <activity
@@ -43,7 +40,9 @@
             android:exported="false" />
         <activity
             android:name="com.rawtooth.loginresgister.Login"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".NLagreActivity"
             android:exported="false" />
@@ -76,13 +75,14 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

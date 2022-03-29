@@ -9,10 +9,7 @@ import android.view.ViewGroup
 import com.rawtooth.loginresgister.Login
 import com.rawtooth.medicineapp.R
 import com.rawtooth.medicineapp.databinding.FragmentUserBinding
-import com.rawtooth.medicineapp.fragments.users.user_address
-import com.rawtooth.medicineapp.fragments.users.user_coupons
-import com.rawtooth.medicineapp.fragments.users.user_order
-import com.rawtooth.medicineapp.fragments.users.user_reminder
+import com.rawtooth.medicineapp.fragments.users.*
 
 
 class user : Fragment() {
@@ -37,6 +34,9 @@ lateinit var userBinding:FragmentUserBinding
             userBinding.userMedicineReminder.setOnClickListener {
                 startActivity(Intent(context, user_reminder::class.java))
             }
+        userBinding.userPrescription.setOnClickListener{
+            startActivity(Intent(context,User_Precription::class.java))
+        }
             return userBinding.root
         }
 

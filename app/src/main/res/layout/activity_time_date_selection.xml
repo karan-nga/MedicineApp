@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cart.TimeDateSelection">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/bag_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E5E5E5"
+        android:background="#E5E5E5"
+        app:title="Patient Details"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/patient_details_back1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#73D686"
+            android:textSize="14sp"
+            android:text="Select Date"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"/>
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/remainderInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/prescriptions_image_back"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="16dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateEdt"
+            android:background="@drawable/prescriptions_image_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Date"
+            android:clickable="true"
+            android:drawableEnd="@drawable/calendar"
+            android:gravity="start"
+            android:focusable="false"
+            android:inputType="textCapWords"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_back"
+            app:itemIconTint="#fff"
+            app:itemTextColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

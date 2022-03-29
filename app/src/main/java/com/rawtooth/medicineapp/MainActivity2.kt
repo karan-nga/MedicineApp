@@ -54,4 +54,6 @@ class MainActivity2 : AppCompatActivity() {
     fun subcription(view: View) {
         startActivity(Intent(this,MemeberSub::class.java))
     }
+
+
 }

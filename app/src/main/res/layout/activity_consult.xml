@@ -28,7 +28,9 @@
 
 
     <GridLayout
+        android:id="@+id/glide_consult"
     android:layout_width="match_parent"
+        android:onClick="bookDoctor"
     android:layout_height="450dp"
         android:alignmentMode="alignMargins"
     android:columnCount="3"

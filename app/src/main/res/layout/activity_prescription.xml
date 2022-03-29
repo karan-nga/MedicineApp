@@ -261,8 +261,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/nav_back"
         app:itemIconTint="#fff"
-        app:itemTextColor="#fff"
-        app:menu="@menu/nav_menu" />
+        app:itemTextColor="#fff" />
     <Button
         android:onClick="covidcare"
         android:layout_width="200dp"

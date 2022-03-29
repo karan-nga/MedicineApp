@@ -71,9 +71,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/nav_back"
         app:itemIconTint="#fff"
-        app:itemTextColor="#fff"
-        app:menu="@menu/nav_menu" />
+        app:itemTextColor="#fff" />
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/patientDetailsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rec74"

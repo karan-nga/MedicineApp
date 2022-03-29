@@ -1,6 +1,7 @@
 package com.rawtooth.medicineapp.cart
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,6 +20,9 @@ class TimeDateSelection : AppCompatActivity(), View.OnClickListener {
         binding= ActivityTimeDateSelectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.dateEdt.setOnClickListener(this)
+        binding.patientDetailsBtn.setOnClickListener{
+            startActivity(Intent(this,PatientDetailsActivity::class.java))
+        }
     }
 
     override fun onClick(v: View?) {

@@ -20,6 +20,8 @@
         <activity
             android:name=".consult.DoctorBook"
             android:exported="false" />
+        <activity android:name=".cart.EnterPatientDetails"
+            android:exported="true"/>
         <activity
             android:name="com.rawtooth.anchal.insurance.CovidCare"
             android:exported="false" />
@@ -46,9 +48,8 @@
         <activity
             android:name=".NLagreActivity"
             android:exported="false" />
-        <activity
-            android:name=".cart.EnterPatientDetails"
-            android:exported="false" />
+        <activity android:name=".cart.TimeDateSelection"
+            android:exported="true"/>
         <activity
             android:name=".cart.PatientDetailsActivity"
             android:exported="false" />

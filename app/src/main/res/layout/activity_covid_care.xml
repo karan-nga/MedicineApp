@@ -59,9 +59,10 @@
       <com.google.android.material.button.MaterialButton
           android:id="@+id/test_addBtn"
           android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
+          android:layout_height="50dp"
           android:background="#73D686"
           android:text="Add"
+          app:cornerRadius="20dp"
           android:layout_marginEnd="19dp"
           android:textColor="@color/black"
           app:layout_constraintEnd_toEndOf="@id/covidcare_v1"

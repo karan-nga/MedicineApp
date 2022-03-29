@@ -205,5 +205,33 @@
             android:layout_height="match_parent"
             android:text="@string/lorem_ipsum" />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <LinearLayout
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nav_back" >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/patientDetailsBtn"
+                android:layout_width="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:backgroundTint="@color/white"
+                android:layout_height="38dp"
+                android:textAllCaps="false"
+                android:background="@drawable/roundbutton"
+                app:backgroundTint="@android:color/white"
+                android:textColor="#73D686"
+                android:layout_gravity="center"
+                android:text="Proceed"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

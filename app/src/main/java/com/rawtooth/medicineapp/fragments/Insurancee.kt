@@ -1,11 +1,13 @@
 package com.rawtooth.medicineapp.fragments
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.rawtooth.anchal.insurance.BuildYourHealthPlan
 import com.rawtooth.anchal.insurance.Insurance_Details
 import com.rawtooth.medicineapp.R
@@ -24,6 +26,7 @@ lateinit var binding:FragmentInsuranceeBinding
         }
         binding.buyhealthcard.setOnClickListener{
             startActivity(Intent(context, BuildYourHealthPlan::class.java))
+
         }
 
 

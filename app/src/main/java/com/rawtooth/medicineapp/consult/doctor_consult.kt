@@ -13,7 +13,7 @@ class doctor_consult : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_doctor_consult)
-//        openbottomsheet()
+
         val bookappointment=findViewById<MaterialButton>(R.id.bookappointment)
         bookappointment.setOnClickListener{
             openbottomsheet()

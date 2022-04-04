@@ -38,6 +38,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -53,5 +54,7 @@ dependencies {
     implementation 'com.synnapps:carouselview:0.1.5'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.kshitijskumar:Ticker:1.0.0'
+    implementation 'com.github.florent37:singledateandtimepicker:2.2.7'
 
 }

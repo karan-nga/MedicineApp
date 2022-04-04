@@ -27,14 +27,12 @@ class doctor_consult : AppCompatActivity() {
         dialog.show()
 
 
-
-
         val users = ArrayList<Model_Details>()
-        users.add(Model_Details("Report 1" ,"https://tinypng.com/images/example-orig.png"))
+        users.add(Model_Details("Report 1", "https://tinypng.com/images/example-orig.png"))
         users.add(Model_Details("Report 2", "https://tinypng.com/images/example-orig.png"))
         users.add(Model_Details("Report 3", "https://tinypng.com/images/example-orig.png"))
         users.add(Model_Details("Report 4", "https://tinypng.com/images/example-orig.png"))
-        users.add(Model_Details("Report 5","https://tinypng.com/images/example-orig.png"))
+        users.add(Model_Details("Report 5", "https://tinypng.com/images/example-orig.png"))
 
         val obj_adapter = CustomAdapter(users)
         val recyclerView=findViewById<RecyclerView>(R.id.prevreport)

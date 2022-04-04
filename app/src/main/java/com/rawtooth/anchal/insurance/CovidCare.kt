@@ -12,8 +12,8 @@ class CovidCare : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityCovidCareBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.testAddBtn.setOnClickListener{
-            startActivity(Intent(this,TestDetails::class.java))
-        }
+//        binding.testAddBtn.setOnClickListener{
+//            startActivity(Intent(this,TestDetails::class.java))
+//        }
     }
 }

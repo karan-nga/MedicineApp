@@ -32,6 +32,7 @@
     <string name="patient_name">Patient Name*</string>
     <string name="upload_report">Upload Report</string>
     <string name="or_choose_from">Or choose from</string>
+    <string name="schedule">Schedule</string>
 
 
 </resources>

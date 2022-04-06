@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name="com.rawtooth.anchal.insurance.Repeat2"
+            android:exported="false"
+            android:label="@string/title_activity_repeat2"
+            android:theme="@style/Theme.MedicineApp.NoActionBar" />
+        <activity
+            android:name="com.rawtooth.anchal.insurance.Repeat"
+            android:exported="false" />
+        <activity
             android:name="com.rawtooth.subscription.MemeberSub"
             android:exported="false" />
         <activity
@@ -20,8 +28,9 @@
         <activity
             android:name=".consult.DoctorBook"
             android:exported="false" />
-        <activity android:name=".cart.EnterPatientDetails"
-            android:exported="true"/>
+        <activity
+            android:name=".cart.EnterPatientDetails"
+            android:exported="true" />
         <activity
             android:name="com.rawtooth.anchal.insurance.CovidCare"
             android:exported="false" />
@@ -42,14 +51,13 @@
             android:exported="false" />
         <activity
             android:name="com.rawtooth.loginresgister.Login"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".NLagreActivity"
             android:exported="false" />
-        <activity android:name=".cart.TimeDateSelection"
-            android:exported="true"/>
+        <activity
+            android:name=".cart.TimeDateSelection"
+            android:exported="true" />
         <activity
             android:name=".cart.PatientDetailsActivity"
             android:exported="false" />
@@ -76,14 +84,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rawtooth.anchal.insurance.Repeat">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="        Repeat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E5E5E5"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/once"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="38dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26dp"
+       />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Weekdays(Mon-Fri)"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="69dp"
+        />
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="55dp"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/weekly_every_monday"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        />
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="85dp"
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/monthy_fourth_monday"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="131dp"
+        />
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="117dp"
+        />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/custom"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="162dp"
+        />
+    <CheckBox
+        android:id="@+id/checkbox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="147dp"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/nav_back"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/nav_menu" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/patientDetailsBtn"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="@id/bottom_nav"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="38dp"
+        android:background="@drawable/roundbutton"
+        app:backgroundTint="@android:color/white"
+        android:textColor="#73D686"
+        android:layout_gravity="center"
+        android:text="@string/done"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

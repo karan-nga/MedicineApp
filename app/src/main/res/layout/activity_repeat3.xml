@@ -4,7 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rawtooth.anchal.insurance.Repeat2">
+    tools:context="com.rawtooth.anchal.insurance.Repeat3">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ecllipse15"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="278dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ecllipse14"
+        android:layout_marginTop="306dp"/>
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -12,25 +27,8 @@
         android:layout_height="wrap_content"
         app:title="        Custom"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/ecllipse15"
+        app:layout_constraintTop_toTopOf="parent"
         android:background="#E5E5E5"/>
-
-    <ImageView
-        android:id="@+id/ecllipse15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ecllipse15"
-        app:layout_constraintBottom_toTopOf="@id/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="278dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ecllipse14"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="257dp"/>
 
     <TextView
         android:id="@+id/frequency"
@@ -62,19 +60,18 @@
         android:id="@+id/txt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/reminder_will_repeat_everyday"
+        android:text="@string/reminder_will_repeat_every_week_on_sun"
         android:textSize="8sp"
         app:layout_constraintTop_toBottomOf="@id/every"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="22dp"
         android:layout_marginTop="0dp"
-        android:fontFamily="@font/robotoregular"
-        />
+        android:fontFamily="@font/robotoregular"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/day"
+        android:text="Week >"
         android:textColor="@color/black"
         android:textSize="10sp"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
@@ -86,7 +83,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_1_day"
+        android:text="1 week>"
         android:textColor="@color/black"
         android:textSize="10sp"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
@@ -94,8 +91,6 @@
         android:layout_marginTop="68dp"
         android:layout_marginStart="335dp"
         android:backgroundTint="@color/white" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

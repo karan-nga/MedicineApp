@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name="com.rawtooth.anchal.insurance.Repeat3"
+            android:exported="false" />
+        <activity
             android:name="com.rawtooth.anchal.insurance.Repeat2"
             android:exported="false"
             android:label="@string/title_activity_repeat2"

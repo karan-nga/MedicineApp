@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frequency"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="172dp"
+        />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sequence"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Day"
+        android:textColor="@color/black"
+        android:layout_marginTop="24.3dp"
+        android:layout_marginStart="182dp"
+        />
+
+    <TextView
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/day"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/week"
+        android:textColor="@color/black"
+        android:layout_marginTop="13.82dp"
+        android:layout_marginStart="182dp"
+        />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/week"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/month"
+        android:textColor="@color/black"
+        android:layout_marginTop="13.82dp"
+        android:layout_marginStart="182dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rec77"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="220dp"
+        android:text="@string/ok"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rec77"
+        app:backgroundTint="@color/white"
+        android:text="@string/cancel"
+        android:textColor="@color/green"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="180dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

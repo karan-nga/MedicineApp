@@ -19,7 +19,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bag_toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="97dp"
         android:layout_marginTop="37dp"
         android:layout_marginStart="22dp"
         android:layout_marginEnd="22dp"
@@ -142,10 +142,10 @@
             app:layout_constraintTop_toTopOf="@id/bag_view2">
 
             <Button
+                android:id="@+id/order_goToAddress"
                 android:layout_width="119dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:onClick="goToAddress"
                 android:layout_marginTop="90dp"
                 android:layout_weight="1"
                 android:background="@drawable/bag_btn1_back_layout"
@@ -156,6 +156,7 @@
                 android:textSize="11sp" />
 
             <Button
+                android:id="@+id/cart_addPrescription"
                 android:layout_width="119dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
@@ -304,7 +305,6 @@
         android:id="@+id/single_screen_v1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:background="@drawable/member_3"
         android:layout_marginStart="22dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -369,4 +369,27 @@
             android:layout_marginTop="33dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_back" >
+
+        <com.google.android.material.button.MaterialButton
+           android:id="@+id/gotoPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="38dp"
+            android:background="@drawable/roundbutton"
+            app:backgroundTint="@android:color/white"
+            android:textColor="#73D686"
+            android:textAllCaps="false"
+            android:text="Place Order"
+            android:layout_gravity="center"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

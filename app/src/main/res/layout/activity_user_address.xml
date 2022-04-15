@@ -13,6 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:title="   Address"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +25,9 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/address_back">
 
+
         <CheckBox
+            android:id="@+id/check1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
@@ -50,6 +53,7 @@
         android:background="@drawable/address_back">
 
         <CheckBox
+            android:id="@+id/check2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
@@ -75,6 +79,7 @@
         android:background="@drawable/address_back">
 
         <CheckBox
+            android:id="@+id/check3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
@@ -87,6 +92,7 @@
             android:layout_marginTop="14dp"
             android:layout_marginEnd="21dp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

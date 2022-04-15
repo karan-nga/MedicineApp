@@ -378,18 +378,5 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        >
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/nav_back"
-            app:itemIconTint="#fff"
-            app:itemTextColor="#fff"
-            app:menu="@menu/nav_menu" />
-    </LinearLayout>
+
 </LinearLayout>

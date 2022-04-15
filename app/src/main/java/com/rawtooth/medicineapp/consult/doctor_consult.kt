@@ -36,8 +36,9 @@ class doctor_consult : AppCompatActivity() {
 
         val obj_adapter = CustomAdapter(users)
         val recyclerView=findViewById<RecyclerView>(R.id.prevreport)
-        recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        recyclerView.adapter = obj_adapter
+        recyclerView.adapter=obj_adapter
+        recyclerView.layoutManager = LinearLayoutManager(this)
+
 
     }
     }

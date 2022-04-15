@@ -107,6 +107,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/namePD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -114,6 +115,7 @@
                 android:layout_weight="1"
                 android:text="Sonya Kapoor"/>
             <TextView
+                android:id="@+id/agePD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -121,6 +123,7 @@
                 android:layout_weight="1"
                 android:text="25"/>
             <TextView
+                android:id="@+id/addressPD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

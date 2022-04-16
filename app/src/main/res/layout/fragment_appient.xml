@@ -49,16 +49,16 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="42dp"/>
 
-   <ImageView
-       android:id="@+id/edtmobile"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/mobilenumber"
-       app:layout_constraintStart_toStartOf="parent"
-       android:src="@drawable/vec96"
-       android:layout_marginStart="42dp"
-       android:layout_marginTop="13dp"
-       />
+    <ImageView
+        android:id="@+id/edtmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mobilenumber"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/vec96"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="13dp"
+        />
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -149,10 +149,6 @@
         android:id="@+id/prevreport2"
         android:layout_marginStart="42dp"
         android:scrollbars="horizontal" />
-
-
-
-
 
 
 

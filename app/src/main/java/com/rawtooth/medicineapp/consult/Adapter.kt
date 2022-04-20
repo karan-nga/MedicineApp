@@ -1,5 +1,6 @@
 package com.rawtooth.medicineapp.consult
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,12 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.rawtooth.medicineapp.R
 
-class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
+class Adapter (val context: Context): RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     var textData= arrayOf("Heart","Knee","Covid","Vitamins","Pregnant")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.report_item_meta, parent, false)
+        val v = LayoutInflater.from(context).inflate(R.layout.report_item_meta, parent, false)
         return ViewHolder(v)
     }
 

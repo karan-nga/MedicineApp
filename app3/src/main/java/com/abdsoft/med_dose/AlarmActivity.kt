@@ -64,7 +64,7 @@ class AlarmActivity : AppCompatActivity() {
         buttonDismiss.setOnClickListener(View.OnClickListener { v: View? ->
             if (timingList != null) {
                 for (i in timingList.indices) {
-                    var time: Array<String?> = timingList[i]?.split(":")!!.toTypedArray()
+                    var time: Array<String?> = timingList[i]?.split(":")!!  .toTypedArray()
                     nextAlarmTime[Calendar.HOUR_OF_DAY] = time[0]!!.toInt()
                     nextAlarmTime[Calendar.MINUTE] = time[1]!!.toInt()
                     if (mCurrentTime.before(nextAlarmTime)) {
@@ -101,7 +101,13 @@ class AlarmActivity : AppCompatActivity() {
         val intent = Intent(this, AlarmActivity::class.java)
         intent.putExtra("medicineName", medicineName)
         val operation =
-            PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_MUTABLE)
+            } else {
+                 PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT
+                )
+            }
+
         /** Getting a reference to the System Service ALARM_SERVICE  */
         val alarmManagerNew = getSystemService(
             Context.ALARM_SERVICE
@@ -112,10 +118,12 @@ class AlarmActivity : AppCompatActivity() {
                 mAlarmTime!!.getTimeInMillis(),
                 operation
             )
-        } else alarmManagerNew.setExact(
-            AlarmManager.RTC_WAKEUP,
-            mAlarmTime!!.getTimeInMillis(),
-            operation
-        )
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            alarmManagerNew.setExact(
+                AlarmManager.RTC_WAKEUP,
+                mAlarmTime!!.getTimeInMillis(),
+                operation
+            )
+        }
     }
 }

@@ -75,7 +75,9 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
             val width = ViewGroup.LayoutParams.MATCH_PARENT
             val height = ViewGroup.LayoutParams.MATCH_PARENT
             dialog.window?.setLayout(width, height)
-            dialog.window?.setWindowAnimations(R.style.AppTheme_Slide)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+                dialog.window?.setWindowAnimations(R.style.AppTheme_Slide)
+            }
         }
     }
 
@@ -156,9 +158,13 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
         timeSelectorItems = ArrayList()
         HomeActivity.Companion.timeItems?.clear()
         if (mPerDay > 0) {
-            numberPicker?.setMinValue(mPerDay)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                numberPicker?.setMinValue(mPerDay)
+            }
         } else {
-            numberPicker?.setMinValue(0)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                numberPicker?.setMinValue(0)
+            }
         }
         (timeSelectorItems as ArrayList<TimeSelectorItem?>).clear()
         for (i in 0 until mPerDay) {
@@ -176,9 +182,13 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
                         //                        Toast.makeText(getContext(), String.valueOf(mPerDay), Toast.LENGTH_LONG).show();
                         HomeActivity.Companion.timeItems?.clear()
                         if (mPerDay > 0) {
-                            numberPicker?.setMinValue(mPerDay)
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                                numberPicker?.setMinValue(mPerDay)
+                            }
                         } else {
-                            numberPicker?.setMinValue(0)
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                                numberPicker?.setMinValue(0)
+                            }
                         }
                         (timeSelectorItems as ArrayList<TimeSelectorItem?>).clear()
                         for (i in 0 until mPerDay) {
@@ -191,12 +201,18 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
                 }
             }
         })
-        numberPicker?.setMaxValue(50)
-        numberPicker?.setMinValue(mPerDay)
-        numberPicker?.setOnValueChangedListener(NumberPicker.OnValueChangeListener { numberPicker, i, i1 ->
-            noOfTotalTimes = numberPicker.value
-            Log.d("picker value", noOfTotalTimes.toString())
-        })
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            numberPicker?.setMaxValue(50)
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            numberPicker?.setMinValue(mPerDay)
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            numberPicker?.setOnValueChangedListener(NumberPicker.OnValueChangeListener { numberPicker, i, i1 ->
+                noOfTotalTimes = numberPicker.value
+                Log.d("picker value", noOfTotalTimes.toString())
+            })
+        }
         chipGroupAlertType?.setOnCheckedChangeListener(ChipGroup.OnCheckedChangeListener { chipGroup: ChipGroup?, id: Int ->
             chipSelected = chipGroup?.findViewById(id)
             if (chipSelected != null) alertType =
@@ -219,7 +235,9 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
         val month = calendar.get(Calendar.MONTH)
         val day = calendar.get(Calendar.DAY_OF_MONTH)
         val noOfTimesPerDay = mPerDay
-        noOfTotalTimes = numberPicker!!.getValue()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+            noOfTotalTimes = numberPicker!!.getValue()
+        }
         val noOfDoses = noOfTotalTimes
         alertType = chipSelected!!.getText().toString()
         val reminderAlterType = alertType
@@ -275,7 +293,17 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
         val intent = Intent(activity, AlarmActivity::class.java)
         intent.putExtra("medicineName", medicineName)
         val operation =
-            PendingIntent.getActivity(activity, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
+                PendingIntent.getActivity(activity, 0, intent, PendingIntent.FLAG_MUTABLE)
+            } else {
+                PendingIntent.getActivity(
+                    context,
+                    0,
+                    intent,
+                    PendingIntent.FLAG_ONE_SHOT
+                )
+            }
+
         /** Getting a reference to the System Service ALARM_SERVICE  */
         val alarmManagerNew = activity?.getSystemService(
             Context.ALARM_SERVICE
@@ -292,11 +320,13 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
                 )
             }
         } else if (mAlarmTime != null) {
-            alarmManagerNew.setExact(
-                AlarmManager.RTC_WAKEUP,
-                mAlarmTime.getTimeInMillis(),
-                operation
-            )
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                alarmManagerNew.setExact(
+                    AlarmManager.RTC_WAKEUP,
+                    mAlarmTime.getTimeInMillis(),
+                    operation
+                )
+            }
         }
     }
 
@@ -311,11 +341,13 @@ class AddDialog(private val homeFragment: HomeFragment?) : DialogFragment(),
             PendingIntent.FLAG_UPDATE_CURRENT
         )
         mNotificationTime?.getTimeInMillis()?.let {
-            alarmManager.setExact(
-                AlarmManager.RTC_WAKEUP,
-                it,
-                broadcast
-            )
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                alarmManager.setExact(
+                    AlarmManager.RTC_WAKEUP,
+                    it,
+                    broadcast
+                )
+            }
         }
         Toast.makeText(
             context,

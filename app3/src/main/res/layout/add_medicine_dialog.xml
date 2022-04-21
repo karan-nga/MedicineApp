@@ -61,7 +61,7 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/string_from"
                     android:textColor="@color/color_primary"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
 
                 <com.google.android.material.textview.MaterialTextView
@@ -73,7 +73,7 @@
                     android:paddingBottom="8dp"
                     android:text="@string/sample_date"
                     android:textColor="@android:color/black"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
 
                 <com.google.android.material.textview.MaterialTextView
@@ -83,7 +83,7 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/string_schedule"
                     android:textColor="@color/color_primary"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
 
                 <HorizontalScrollView
@@ -153,7 +153,7 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/string_time"
                     android:textColor="@color/color_primary"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_view_time"
@@ -181,7 +181,7 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/number_of_total_doses"
                     android:textColor="@color/color_primary"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
 
                 <NumberPicker
@@ -199,7 +199,7 @@
                     android:layout_marginTop="16dp"
                     android:text="@string/alert_type"
                     android:textColor="@color/color_primary"
-                    android:textSize="12sp" />
+                    android:textSize="16sp" />
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -225,6 +225,7 @@
                         <com.google.android.material.chip.Chip
                             android:id="@+id/chip_notification"
                             android:text="@string/notification"
+                            android:textSize="16sp"
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
@@ -232,6 +233,7 @@
                         <com.google.android.material.chip.Chip
                             android:id="@+id/chip_alarm"
                             android:text="@string/alarm"
+                            android:textSize="16sp"
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>

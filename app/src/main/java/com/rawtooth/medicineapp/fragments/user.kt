@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.abdsoft.med_dose.HomeActivity
 import com.rawtooth.loginresgister.Login
 import com.rawtooth.medicineapp.R
 import com.rawtooth.medicineapp.databinding.FragmentUserBinding
@@ -32,7 +33,7 @@ lateinit var userBinding:FragmentUserBinding
             startActivity(Intent(context,Login::class.java))
                     }
             userBinding.userMedicineReminder.setOnClickListener {
-                startActivity(Intent(context, user_reminder::class.java))
+                startActivity(Intent(context, HomeActivity::class.java))
             }
         userBinding.userPrescription.setOnClickListener{
             startActivity(Intent(context,User_Precription::class.java))

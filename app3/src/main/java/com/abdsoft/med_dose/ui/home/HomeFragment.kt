@@ -53,7 +53,7 @@ class HomeFragment : Fragment() {
         recyclerView.setAdapter(adapter);*/loadMedicines()
         val fabAddMedicine: ExtendedFloatingActionButton = root.findViewById(R.id.fab_add_medicine)
         fabAddMedicine.setOnClickListener {
-            Toast.makeText(context, "Showing Add Dialog", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(context, "Showing Add Dialog", Toast.LENGTH_SHORT).show()
             val addMedicineDialog = AddDialog(this@HomeFragment)
             fragmentManager?.let { it1 -> addMedicineDialog.show(it1, "Add_Dialog") }
         }

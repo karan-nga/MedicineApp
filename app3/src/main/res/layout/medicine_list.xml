@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="wrap_content"
     android:padding="8dp">
 
@@ -38,12 +39,15 @@
                         android:id="@+id/medicine_name_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="26sp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
                         android:text="@string/medicine_name" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/dosage_text_view"
                         android:layout_width="match_parent"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
                         android:layout_height="wrap_content"
                         android:text="@string/dosage_summary"/>
 

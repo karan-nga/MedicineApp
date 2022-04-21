@@ -28,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration.Builder(
-            R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_settings
+            R.id.navigation_home, R.id.navigation_dashboard
         )
             .build()
         val navController = findNavController(this, R.id.nav_host_fragment)

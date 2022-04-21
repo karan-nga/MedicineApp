@@ -1,10 +1,7 @@
 package com.rawtooth.medicineapp.fragments.users
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.abdsoft.med_dose.HomeActivity
-
+import androidx.appcompat.app.AppCompatActivity
 import com.rawtooth.medicineapp.databinding.ActivityUserReminderBinding
 
 class user_reminder : AppCompatActivity() {
@@ -14,13 +11,13 @@ class user_reminder : AppCompatActivity() {
 //    private lateinit var alarmManager: AlarmManager
 //    private lateinit var pendingIntent: PendingIntent
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityUserReminderBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-       binding.whole.setOnClickListener{
-           startActivity(Intent(this,HomeActivity::class.java))
-       }
-    }
+    super.onCreate(savedInstanceState)
+    binding = ActivityUserReminderBinding.inflate(layoutInflater)
+    setContentView(binding.root)
+//       binding.whole.setOnClickListener{
+//           startActivity(Intent(this,HomeActivity::class.java))
+//       }
+}
 //        createNotificationChannel()
 //
 //        binding.selectTimeBtn.setOnClickListener {

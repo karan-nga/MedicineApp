@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp"
+    android:background="@color/white"
     android:layout_margin="8dp">
 
     <com.google.android.material.card.MaterialCardView
@@ -21,29 +22,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
+                    android:textColor="#000000"
                     android:text="Medicine Name: " />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/medicine_date_text_view_history"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="#000000"
                     android:text="Date: " />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/medicine_times_per_day_text_view_history"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="#000000"
                     android:text="Times: " />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/total_dosage_text_view_history"
                     android:layout_width="match_parent"
+                    android:textColor="#000000"
                     android:layout_height="wrap_content"
                     android:text="Total Dosage: "/>
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/medicine_timings_text_view_history"
                     android:layout_width="match_parent"
+                    android:textColor="#000000"
                     android:layout_height="wrap_content"
                     android:text="Timings: " />
 

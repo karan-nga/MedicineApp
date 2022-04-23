@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineApp">
         <activity
+            android:name=".cart.Test_Cart_Order"
+            android:exported="false" />
+        <activity
             android:name="com.rawtooth.anchal.insurance.Repeat3"
             android:exported="false" />
         <activity
@@ -29,6 +32,8 @@
         <activity
             android:name=".cart.EnterPatientDetails"
             android:exported="true" />
+        <activity android:name=".fragments.users.User_Precription"
+            android:exported="true"/>
         <activity
             android:name="com.rawtooth.anchal.insurance.CovidCare"
             android:exported="false" />
@@ -49,7 +54,7 @@
             android:exported="false" />
         <activity
             android:name="com.rawtooth.loginresgister.Login"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".NLagreActivity"
             android:exported="false" />

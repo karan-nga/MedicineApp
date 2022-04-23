@@ -1,5 +1,6 @@
 package com.rawtooth.medicineapp.cart
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.rawtooth.medicineapp.R
@@ -12,6 +13,9 @@ class PatientDetailsActivity : AppCompatActivity() {
         binding= ActivityPatientDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         tally()
+        binding.patientDetailsBtn.setOnClickListener{
+            startActivity(Intent(this,Test_Cart_Order::class.java))
+        }
     }
 
     private fun tally() {
